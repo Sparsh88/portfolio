@@ -54,7 +54,17 @@ export const Skills: React.FC = () => {
                   {category.skills.map((skill, sIdx) => (
                     <motion.div
                       key={sIdx}
-                      whileHover={{ scale: 1.06 }}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ 
+                        duration: 0.35, 
+                        delay: 0.15 + sIdx * 0.04, 
+                        type: "spring", 
+                        stiffness: 260, 
+                        damping: 20 
+                      }}
+                      whileHover={{ scale: 1.08, y: -2 }}
                       className="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-neutral-50 dark:bg-[#141414] text-neutral-800 dark:text-neutral-200 border border-neutral-300 dark:border-neutral-800 hover:border-black dark:hover:border-white transition-all duration-200 shadow-3xs"
                     >
                       <TechIcon name={skill.name} className="w-4 h-4 shrink-0" />

@@ -98,8 +98,20 @@ export const About: React.FC = () => {
             <div className="space-y-8 relative before:absolute before:inset-0 before:left-2 before:w-0.5 before:bg-neutral-300 dark:before:bg-neutral-800 group-hover:before:bg-neutral-400 transition-colors">
               
               {/* Item 1: Degree */}
-              <div className="relative pl-7 space-y-1">
-                <div className="absolute left-[5px] top-1.5 w-2 h-2 rounded-full bg-violet-600 ring-4 ring-violet-100 dark:ring-violet-950" />
+              <motion.div 
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="relative pl-7 space-y-1"
+              >
+                <motion.div 
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.3, type: "spring", stiffness: 300 }}
+                  className="absolute left-[5px] top-1.5 w-2 h-2 rounded-full bg-violet-600 ring-4 ring-violet-100 dark:ring-violet-950" 
+                />
                 
                 <div className="text-xs font-bold text-violet-600 dark:text-violet-400 uppercase tracking-wider">
                   2024 — 2028
@@ -116,11 +128,23 @@ export const About: React.FC = () => {
                 <div className="text-xs text-neutral-500 dark:text-neutral-400 pt-0.5">
                   Lovely Professional University (LPU) • Punjab, India
                 </div>
-              </div>
+              </motion.div>
 
               {/* Item 2: CSR */}
-              <div className="relative pl-7 space-y-1">
-                <div className="absolute left-[5px] top-1.5 w-2 h-2 rounded-full bg-sky-500 ring-4 ring-sky-100 dark:ring-sky-950" />
+              <motion.div 
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.35 }}
+                className="relative pl-7 space-y-1"
+              >
+                <motion.div 
+                  initial={{ scale: 0 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.45, type: "spring", stiffness: 300 }}
+                  className="absolute left-[5px] top-1.5 w-2 h-2 rounded-full bg-sky-500 ring-4 ring-sky-100 dark:ring-sky-950" 
+                />
                 
                 <div className="text-xs font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider">
                   2024 — 2025
@@ -137,7 +161,7 @@ export const About: React.FC = () => {
                 <div className="text-xs text-neutral-500 dark:text-neutral-400 pt-0.5">
                   Educating government school students on cybersecurity & digital safety
                 </div>
-              </div>
+              </motion.div>
 
             </div>
           </motion.div>
