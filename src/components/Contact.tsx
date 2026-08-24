@@ -59,7 +59,7 @@ export const Contact: React.FC = () => {
             <div className="bg-white dark:bg-[#0D0D0D] rounded-3xl p-7 border-2 border-neutral-300 dark:border-neutral-800 shadow-md space-y-6">
               <div>
                 <h3 className="text-lg font-bold text-neutral-950 dark:text-white">Direct Communication</h3>
-                <p className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 mt-1">Feel free to reach out directly via email, mobile, or WhatsApp.</p>
+                <p className="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 mt-1">Feel free to reach out directly via email, mobile, or social channels.</p>
               </div>
 
               {/* Contact Channels */}
@@ -93,57 +93,50 @@ export const Contact: React.FC = () => {
                   </div>
                   <ArrowRight className="w-4 h-4 text-neutral-400 group-hover:text-black dark:group-hover:text-white group-hover:translate-x-0.5 transition-transform" />
                 </a>
-
-                {/* WhatsApp Card */}
-                <a
-                  href="https://wa.me/917088951914"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-3.5 p-4 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-black dark:hover:border-neutral-500 transition-colors group shadow-3xs"
-                >
-                  <div className="w-10 h-10 rounded-xl bg-black dark:bg-white text-white dark:text-black flex items-center justify-center shrink-0">
-                    <WhatsAppIcon className="w-4 h-4" />
-                  </div>
-                  <div className="min-w-0 flex-1">
-                    <div className="text-[10px] font-bold text-neutral-400 uppercase tracking-wider">WhatsApp</div>
-                    <div className="text-xs sm:text-sm font-bold text-neutral-900 dark:text-white truncate">+91 7088951914</div>
-                  </div>
-                  <ArrowRight className="w-4 h-4 text-neutral-400 group-hover:text-black dark:group-hover:text-white group-hover:translate-x-0.5 transition-transform" />
-                </a>
               </div>
 
               {/* Social Connects */}
               <div className="space-y-3 pt-2">
                 <div className="text-[10px] font-bold text-neutral-400 uppercase tracking-wider">Social Channels</div>
-                <div className="grid grid-cols-3 gap-2.5">
+                <div className="grid grid-cols-2 gap-3">
                   <a
                     href="https://github.com/Sparsh88"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center sm:justify-start space-x-2 p-3 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-black dark:hover:border-neutral-500 transition-colors group shadow-3xs"
+                    className="flex items-center space-x-2.5 p-3 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-black dark:hover:border-neutral-500 transition-colors group shadow-3xs"
                   >
                     <GithubIcon className="w-4 h-4 text-neutral-700 dark:text-neutral-300 group-hover:text-black dark:group-hover:text-white shrink-0" />
-                    <span className="text-xs font-bold text-neutral-900 dark:text-white truncate">GitHub</span>
+                    <span className="text-xs font-bold text-neutral-900 dark:text-white">GitHub</span>
                   </a>
 
                   <a
                     href="https://linkedin.com/in/sparshchauhan08"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center sm:justify-start space-x-2 p-3 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-black dark:hover:border-neutral-500 transition-colors group shadow-3xs"
+                    className="flex items-center space-x-2.5 p-3 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-black dark:hover:border-neutral-500 transition-colors group shadow-3xs"
                   >
                     <LinkedinIcon className="w-4 h-4 text-neutral-700 dark:text-neutral-300 group-hover:text-black dark:group-hover:text-white shrink-0" />
-                    <span className="text-xs font-bold text-neutral-900 dark:text-white truncate">LinkedIn</span>
+                    <span className="text-xs font-bold text-neutral-900 dark:text-white">LinkedIn</span>
                   </a>
 
                   <a
                     href="https://leetcode.com/u/aBfXZJ88ua/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center sm:justify-start space-x-2 p-3 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-[#FFA116] dark:hover:border-[#FFA116] transition-colors group shadow-3xs"
+                    className="flex items-center space-x-2.5 p-3 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-[#FFA116] dark:hover:border-[#FFA116] transition-colors group shadow-3xs"
                   >
                     <LeetCodeIcon className="w-4 h-4 text-neutral-700 dark:text-neutral-300 group-hover:text-[#FFA116] shrink-0" />
-                    <span className="text-xs font-bold text-neutral-900 dark:text-white truncate">LeetCode</span>
+                    <span className="text-xs font-bold text-neutral-900 dark:text-white">LeetCode</span>
+                  </a>
+
+                  <a
+                    href="https://wa.me/917088951914"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2.5 p-3 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-[#25D366] dark:hover:border-[#25D366] transition-colors group shadow-3xs"
+                  >
+                    <WhatsAppIcon className="w-4 h-4 text-neutral-700 dark:text-neutral-300 group-hover:text-[#25D366] shrink-0" />
+                    <span className="text-xs font-bold text-neutral-900 dark:text-white">WhatsApp</span>
                   </a>
                 </div>
               </div>
