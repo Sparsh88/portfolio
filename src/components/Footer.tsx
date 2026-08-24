@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowUp } from 'lucide-react';
-import { GithubIcon, LinkedinIcon } from './SocialIcons';
+import { GithubIcon, LinkedinIcon, LeetCodeIcon } from './SocialIcons';
 import { motion } from 'framer-motion';
 
 export const Footer: React.FC = () => {
@@ -50,6 +50,16 @@ export const Footer: React.FC = () => {
               aria-label="LinkedIn"
             >
               <LinkedinIcon className="w-4 h-4" />
+            </a>
+
+            <a
+              href="https://leetcode.com/u/aBfXZJ88ua/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2.5 rounded-full bg-neutral-100 dark:bg-[#141414] hover:bg-neutral-200 dark:hover:bg-[#202020] text-neutral-700 dark:text-neutral-300 hover:text-[#FFA116] dark:hover:text-[#FFA116] transition-colors"
+              aria-label="LeetCode"
+            >
+              <LeetCodeIcon className="w-4 h-4" />
             </a>
 
             <button

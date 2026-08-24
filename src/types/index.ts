@@ -61,6 +61,7 @@ export interface ProfileInfo {
   education: EducationInfo;
   github: string;
   linkedin: string;
+  leetcode?: string;
   email: string;
   phone?: string;
   whatsapp?: string;

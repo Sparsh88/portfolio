@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, Send, CheckCircle2, ArrowRight } from 'lucide-react';
-import { GithubIcon, LinkedinIcon, WhatsAppIcon } from './SocialIcons';
+import { GithubIcon, LinkedinIcon, WhatsAppIcon, LeetCodeIcon } from './SocialIcons';
 import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
 
@@ -115,25 +115,35 @@ export const Contact: React.FC = () => {
               {/* Social Connects */}
               <div className="space-y-3 pt-2">
                 <div className="text-[10px] font-bold text-neutral-400 uppercase tracking-wider">Social Channels</div>
-                <div className="grid grid-cols-2 gap-3">
+                <div className="grid grid-cols-3 gap-2.5">
                   <a
                     href="https://github.com/Sparsh88"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2.5 p-3 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-black dark:hover:border-neutral-500 transition-colors group shadow-3xs"
+                    className="flex items-center justify-center sm:justify-start space-x-2 p-3 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-black dark:hover:border-neutral-500 transition-colors group shadow-3xs"
                   >
-                    <GithubIcon className="w-4 h-4 text-neutral-700 dark:text-neutral-300 group-hover:text-black dark:group-hover:text-white" />
-                    <span className="text-xs font-bold text-neutral-900 dark:text-white">GitHub</span>
+                    <GithubIcon className="w-4 h-4 text-neutral-700 dark:text-neutral-300 group-hover:text-black dark:group-hover:text-white shrink-0" />
+                    <span className="text-xs font-bold text-neutral-900 dark:text-white truncate">GitHub</span>
                   </a>
 
                   <a
                     href="https://linkedin.com/in/sparshchauhan08"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-2.5 p-3 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-black dark:hover:border-neutral-500 transition-colors group shadow-3xs"
+                    className="flex items-center justify-center sm:justify-start space-x-2 p-3 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-black dark:hover:border-neutral-500 transition-colors group shadow-3xs"
                   >
-                    <LinkedinIcon className="w-4 h-4 text-neutral-700 dark:text-neutral-300 group-hover:text-black dark:group-hover:text-white" />
-                    <span className="text-xs font-bold text-neutral-900 dark:text-white">LinkedIn</span>
+                    <LinkedinIcon className="w-4 h-4 text-neutral-700 dark:text-neutral-300 group-hover:text-black dark:group-hover:text-white shrink-0" />
+                    <span className="text-xs font-bold text-neutral-900 dark:text-white truncate">LinkedIn</span>
+                  </a>
+
+                  <a
+                    href="https://leetcode.com/u/aBfXZJ88ua/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center sm:justify-start space-x-2 p-3 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-[#FFA116] dark:hover:border-[#FFA116] transition-colors group shadow-3xs"
+                  >
+                    <LeetCodeIcon className="w-4 h-4 text-neutral-700 dark:text-neutral-300 group-hover:text-[#FFA116] shrink-0" />
+                    <span className="text-xs font-bold text-neutral-900 dark:text-white truncate">LeetCode</span>
                   </a>
                 </div>
               </div>

@@ -38,6 +38,7 @@
   <p align="center">
     <a href="https://github.com/Sparsh88"><strong>GitHub Profile</strong></a> •
     <a href="https://linkedin.com/in/sparshchauhan08"><strong>LinkedIn</strong></a> •
+    <a href="https://leetcode.com/u/aBfXZJ88ua/"><strong>LeetCode</strong></a> •
     <a href="mailto:sparshchauhan050@gmail.com"><strong>Email Me</strong></a>
   </p>
 </div>
@@ -254,6 +255,7 @@ To run this portfolio project locally on your machine:
 
 - **GitHub**: [@Sparsh88](https://github.com/Sparsh88)
 - **LinkedIn**: [Sparsh Chauhan](https://linkedin.com/in/sparshchauhan08)
+- **LeetCode**: [aBfXZJ88ua](https://leetcode.com/u/aBfXZJ88ua/)
 - **Email**: [sparshchauhan050@gmail.com](mailto:sparshchauhan050@gmail.com)
 - **Mobile / WhatsApp**: [+91 7088951914](https://wa.me/917088951914)
 - **Location**: Punjab, India
