@@ -62,6 +62,8 @@ export interface ProfileInfo {
   github: string;
   linkedin: string;
   email: string;
+  phone?: string;
+  whatsapp?: string;
   location: string;
   availabilityStatus: string;
 }

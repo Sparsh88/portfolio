@@ -17,6 +17,8 @@ export const profileData: ProfileInfo = {
   github: 'https://github.com/Sparsh88',
   linkedin: 'https://linkedin.com/in/sparshchauhan08',
   email: 'sparshchauhan050@gmail.com',
+  phone: '+91 7088951914',
+  whatsapp: 'https://wa.me/917088951914',
   location: 'Punjab, India',
   availabilityStatus: 'Open for Opportunities & Projects'
 };
