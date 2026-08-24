@@ -123,7 +123,7 @@ export const About: React.FC = () => {
                 <div className="absolute left-[5px] top-1.5 w-2 h-2 rounded-full bg-sky-500 ring-4 ring-sky-100 dark:ring-sky-950" />
                 
                 <div className="text-xs font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider">
-                  2024 — PRESENT
+                  2024 — 2025
                 </div>
 
                 <h3 className="text-lg sm:text-xl font-bold text-neutral-950 dark:text-white group-hover:text-black dark:group-hover:text-white tracking-tight transition-colors">
