@@ -102,7 +102,7 @@ export const About: React.FC = () => {
                 <div className="absolute left-[5px] top-1.5 w-2 h-2 rounded-full bg-violet-600 ring-4 ring-violet-100 dark:ring-violet-950" />
                 
                 <div className="text-xs font-bold text-violet-600 dark:text-violet-400 uppercase tracking-wider">
-                  2024 — 2028 (EXPECTED)
+                  2024 — 2028
                 </div>
 
                 <h3 className="text-lg sm:text-xl font-bold text-neutral-950 dark:text-white group-hover:text-black dark:group-hover:text-white tracking-tight transition-colors">
