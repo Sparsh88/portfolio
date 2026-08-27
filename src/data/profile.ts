@@ -15,7 +15,7 @@ export const profileData: ProfileInfo = {
     description: 'Focusing on core computer science fundamentals, data structures & algorithms, full-stack software development, database management systems, and modern AI integration.'
   },
   github: 'https://github.com/Sparsh88',
-  linkedin: 'https://linkedin.com/in/sparshchauhan08',
+  linkedin: 'https://www.linkedin.com/in/sparsh88',
   leetcode: 'https://leetcode.com/u/aBfXZJ88ua/',
   email: 'sparshchauhan050@gmail.com',
   phone: '+91 7088951914',

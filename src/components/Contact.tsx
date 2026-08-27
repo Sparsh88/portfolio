@@ -110,7 +110,7 @@ export const Contact: React.FC = () => {
                   </a>
 
                   <a
-                    href="https://linkedin.com/in/sparshchauhan08"
+                    href="https://www.linkedin.com/in/sparsh88"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center space-x-2.5 p-3 rounded-2xl bg-[#F8F9FA] dark:bg-[#141414] border border-neutral-300 dark:border-neutral-800 hover:border-black dark:hover:border-neutral-500 transition-colors group shadow-3xs"
