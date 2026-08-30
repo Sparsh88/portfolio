@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence, useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useSpring, useTransform, useMotionValueEvent } from 'framer-motion';
 import { ArrowUp } from 'lucide-react';
+
+const CIRCUMFERENCE = 2 * Math.PI * 18; // radius 18 => ~113.1
 
 export const ScrollProgressWidget: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [percentText, setPercentText] = useState(0);
   const { scrollYProgress } = useScroll();
   
   const smoothProgress = useSpring(scrollYProgress, {
@@ -12,12 +15,11 @@ export const ScrollProgressWidget: React.FC = () => {
     restDelta: 0.001
   });
 
-  const progressPercent = useTransform(smoothProgress, p => Math.round(p * 100));
-  const [percentText, setPercentText] = useState(0);
+  const strokeDashoffset = useTransform(smoothProgress, p => CIRCUMFERENCE * (1 - p));
 
-  useEffect(() => {
-    return progressPercent.on('change', v => setPercentText(v));
-  }, [progressPercent]);
+  useMotionValueEvent(smoothProgress, 'change', latest => {
+    setPercentText(Math.round(latest * 100));
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,8 +37,6 @@ export const ScrollProgressWidget: React.FC = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
-  const circumference = 2 * Math.PI * 18; // radius 18 => ~113.1
 
   return (
     <AnimatePresence>
@@ -82,8 +82,8 @@ export const ScrollProgressWidget: React.FC = () => {
                 strokeLinecap="round"
                 className="text-sky-500 dark:text-sky-400"
                 style={{
-                  strokeDasharray: circumference,
-                  strokeDashoffset: useTransform(smoothProgress, p => circumference * (1 - p))
+                  strokeDasharray: CIRCUMFERENCE,
+                  strokeDashoffset
                 }}
               />
             </svg>
