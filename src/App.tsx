@@ -11,7 +11,6 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { LoadingScreen } from './components/LoadingScreen';
 import { ScrollProgressWidget } from './components/ScrollProgressWidget';
-import { AmbientBackground } from './components/AmbientBackground';
 import { AnimatePresence } from 'framer-motion';
 
 const MainPortfolioContent: React.FC = () => {
@@ -25,15 +24,12 @@ const MainPortfolioContent: React.FC = () => {
         )}
       </AnimatePresence>
 
-      <div className="min-h-screen bg-[#F3F4F6] dark:bg-[#000000] text-neutral-950 dark:text-white flex flex-col selection:bg-neutral-900 dark:selection:bg-white selection:text-white dark:selection:text-black transition-colors duration-300 relative">
-        {/* Dynamic Parallax Ambient Lighting on Scroll */}
-        <AmbientBackground />
-
-        {/* Sticky Editorial Navbar with Top Scroll Indicator */}
+      <div className="min-h-screen bg-[#F3F4F6] dark:bg-[#000000] text-neutral-950 dark:text-white flex flex-col selection:bg-neutral-900 dark:selection:bg-white selection:text-white dark:selection:text-black transition-colors duration-300">
+        {/* Sticky Editorial Navbar */}
         <Navbar />
 
         {/* Main Content Sections */}
-        <main className="flex-1 relative z-10">
+        <main className="flex-1">
           <Hero />
           <About />
           <Skills />
