@@ -4,7 +4,7 @@ import { ArrowUp } from 'lucide-react';
 
 export const ScrollProgressWidget: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const { scrollY, scrollYProgress } = useScroll();
+  const { scrollYProgress } = useScroll();
   
   const smoothProgress = useSpring(scrollYProgress, {
     stiffness: 120,
