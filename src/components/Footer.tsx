@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-white dark:bg-[#000000] border-t-2 border-neutral-300 dark:border-neutral-800 py-12 transition-colors duration-300">
+    <footer className="relative z-20 bg-white dark:bg-[#000000] border-t border-neutral-200 dark:border-neutral-800 py-10 transition-colors duration-300">
       <motion.div 
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Socials & Back to Top */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3 sm:space-x-4">
             <a
               href="https://github.com/Sparsh88"
               target="_blank"
@@ -56,7 +56,7 @@ export const Footer: React.FC = () => {
               href="https://leetcode.com/u/aBfXZJ88ua/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-full bg-neutral-100 dark:bg-[#141414] hover:bg-neutral-200 dark:hover:bg-[#202020] text-neutral-700 dark:text-neutral-300 hover:text-[#FFA116] dark:hover:text-[#FFA116] transition-colors"
+              className="p-2.5 rounded-full bg-neutral-100 dark:bg-[#141414] hover:bg-neutral-200 dark:hover:bg-[#202020] text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors"
               aria-label="LeetCode"
             >
               <LeetCodeIcon className="w-4 h-4" />
@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
               href="https://wa.me/917088951914"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-full bg-neutral-100 dark:bg-[#141414] hover:bg-neutral-200 dark:hover:bg-[#202020] text-neutral-700 dark:text-neutral-300 hover:text-[#25D366] dark:hover:text-[#25D366] transition-colors"
+              className="p-2.5 rounded-full bg-neutral-100 dark:bg-[#141414] hover:bg-neutral-200 dark:hover:bg-[#202020] text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors"
               aria-label="WhatsApp"
             >
               <WhatsAppIcon className="w-4 h-4" />
