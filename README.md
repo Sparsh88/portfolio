@@ -139,7 +139,7 @@ Here is a summary of the production-ready applications built and showcased in th
 | Domain | Technologies & Tools |
 | :--- | :--- |
 | **Programming Languages** | C++, Java, TypeScript, JavaScript, SQL, HTML5, CSS3 |
-| **Frontend Development** | React.js (v19), Next.js, TypeScript, Tailwind CSS, Zustand, Framer Motion, HTML5/CSS3 |
+| **Frontend Development** | React.js (v19), Next.js, Tailwind CSS, Zustand, Framer Motion, HTML5/CSS3 |
 | **Backend & APIs** | Node.js, Express.js, RESTful APIs, JWT Authentication, Multer, Socket.IO |
 | **Databases & ORMs** | PostgreSQL, MongoDB, Prisma ORM, Mongoose |
 | **AI & Real-Time APIs** | Google Gemini 1.5 Flash API, WebRTC RTCPeerConnection, Web Speech API |
