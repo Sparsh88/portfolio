@@ -126,7 +126,7 @@ export const Hero: React.FC = () => {
                 <img
                   src={profileImg}
                   alt="Sparsh Chauhan - Full Stack Developer"
-                  className="w-full h-full object-cover object-[50%_18%] scale-[1.35] group-hover:scale-[1.42] transition-transform duration-700 ease-out"
+                  className="w-full h-full object-cover object-top scale-[1.08] group-hover:scale-[1.15] transition-transform duration-700 ease-out"
                 />
               </div>
 
