@@ -43,12 +43,40 @@ export interface Certificate {
   skillsLearned: string[];
 }
 
+export interface ExperienceItem {
+  id: string;
+  role: string;
+  company: string;
+  location?: string;
+  timeline: string;
+  type: string;
+  description?: string;
+  highlights: string[];
+  technologies: string[];
+  githubUrl?: string;
+  liveUrl?: string;
+}
+
+export interface TrainingItem {
+  id: string;
+  title: string;
+  institution: string;
+  timeline: string;
+  grade?: string;
+  certificateNo?: string;
+  registrationNo?: string;
+  credentialUrl?: string;
+  highlights: string[];
+  topics?: string[];
+}
+
 export interface EducationInfo {
   degree: string;
-  field: string;
+  field?: string;
   institution: string;
   timeline: string;
   location: string;
+  score?: string;
   description: string;
 }
 
@@ -59,6 +87,7 @@ export interface ProfileInfo {
   bio: string;
   university: string;
   education: EducationInfo;
+  educationHistory: EducationInfo[];
   github: string;
   linkedin: string;
   leetcode?: string;
@@ -68,3 +97,4 @@ export interface ProfileInfo {
   location: string;
   availabilityStatus: string;
 }
+

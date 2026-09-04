@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
               href="https://github.com/Sparsh88"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-full bg-neutral-100 dark:bg-[#141414] hover:bg-neutral-200 dark:hover:bg-[#202020] text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors"
+              className="p-2.5 rounded-full bg-neutral-100 dark:bg-[#141414] border border-transparent hover:border-black dark:hover:border-white text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-all duration-200"
               aria-label="GitHub"
             >
               <GithubIcon className="w-4 h-4" />
@@ -46,7 +46,7 @@ export const Footer: React.FC = () => {
               href="https://www.linkedin.com/in/sparsh88"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-full bg-neutral-100 dark:bg-[#141414] hover:bg-neutral-200 dark:hover:bg-[#202020] text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors"
+              className="p-2.5 rounded-full bg-neutral-100 dark:bg-[#141414] border border-transparent hover:border-[#0A66C2] dark:hover:border-[#0A66C2] text-neutral-700 dark:text-neutral-300 hover:text-[#0A66C2] dark:hover:text-[#0A66C2] hover:bg-blue-50 dark:hover:bg-blue-950/40 transition-all duration-200"
               aria-label="LinkedIn"
             >
               <LinkedinIcon className="w-4 h-4" />
@@ -56,7 +56,7 @@ export const Footer: React.FC = () => {
               href="https://leetcode.com/u/aBfXZJ88ua/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-full bg-neutral-100 dark:bg-[#141414] hover:bg-neutral-200 dark:hover:bg-[#202020] text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors"
+              className="p-2.5 rounded-full bg-neutral-100 dark:bg-[#141414] border border-transparent hover:border-[#FFA116] dark:hover:border-[#FFA116] text-neutral-700 dark:text-neutral-300 hover:text-[#FFA116] dark:hover:text-[#FFA116] hover:bg-amber-50 dark:hover:bg-amber-950/40 transition-all duration-200"
               aria-label="LeetCode"
             >
               <LeetCodeIcon className="w-4 h-4" />
@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
               href="https://wa.me/917088951914"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2.5 rounded-full bg-neutral-100 dark:bg-[#141414] hover:bg-neutral-200 dark:hover:bg-[#202020] text-neutral-700 dark:text-neutral-300 hover:text-black dark:hover:text-white transition-colors"
+              className="p-2.5 rounded-full bg-neutral-100 dark:bg-[#141414] border border-transparent hover:border-[#25D366] dark:hover:border-[#25D366] text-neutral-700 dark:text-neutral-300 hover:text-[#25D366] dark:hover:text-[#25D366] hover:bg-emerald-50 dark:hover:bg-emerald-950/40 transition-all duration-200"
               aria-label="WhatsApp"
             >
               <WhatsAppIcon className="w-4 h-4" />

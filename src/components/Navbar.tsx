@@ -26,7 +26,7 @@ export const Navbar: React.FC = () => {
       }
 
       // Active section detection
-      const sections = ['home', 'about', 'skills', 'projects', 'certificates', 'contact'];
+      const sections = ['home', 'about', 'experience', 'skills', 'projects', 'certificates', 'contact'];
       const scrollPosition = window.scrollY + 120;
 
       for (const section of sections) {
@@ -49,6 +49,7 @@ export const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Home', href: '#home', id: 'home' },
     { name: 'About', href: '#about', id: 'about' },
+    { name: 'Experience', href: '#experience', id: 'experience' },
     { name: 'Skills', href: '#skills', id: 'skills' },
     { name: 'Projects', href: '#projects', id: 'projects' },
     { name: 'Certificates', href: '#certificates', id: 'certificates' },
@@ -65,7 +66,7 @@ export const Navbar: React.FC = () => {
     >
       {/* Scroll Progress Bar at the top of Navbar */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-sky-500 via-purple-500 to-emerald-500 origin-left z-50 pointer-events-none"
+        className="fixed top-0 left-0 right-0 h-[3px] bg-black dark:bg-white origin-left z-50 pointer-events-none"
         style={{ scaleX }}
       />
 

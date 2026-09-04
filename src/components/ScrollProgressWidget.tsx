@@ -80,7 +80,7 @@ export const ScrollProgressWidget: React.FC = () => {
                 stroke="currentColor"
                 strokeWidth="2.5"
                 strokeLinecap="round"
-                className="text-sky-500 dark:text-sky-400"
+                className="text-black dark:text-white"
                 style={{
                   strokeDasharray: CIRCUMFERENCE,
                   strokeDashoffset

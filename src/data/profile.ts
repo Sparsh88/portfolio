@@ -10,12 +10,41 @@ export const profileData: ProfileInfo = {
     degree: 'Bachelor of Technology (B.Tech)',
     field: 'Computer Science & Engineering',
     institution: 'Lovely Professional University (LPU)',
-    timeline: '2024 – 2028',
-    location: 'Punjab, India',
+    timeline: '2024 – Present',
+    location: 'Phagwara, Punjab',
+    score: 'CGPA: 8.53',
     description: 'Focusing on core computer science fundamentals, data structures & algorithms, full-stack software development, database management systems, and modern AI integration.'
   },
+  educationHistory: [
+    {
+      degree: 'Bachelor of Technology (B.Tech)',
+      field: 'Computer Science and Engineering',
+      institution: 'Lovely Professional University (LPU)',
+      timeline: 'Aug 2024 – Present',
+      location: 'Phagwara, Punjab',
+      score: 'CGPA: 8.53',
+      description: 'Focusing on core computer science fundamentals, data structures & algorithms, full-stack software development, database management systems, and AI integration.'
+    },
+    {
+      degree: 'Class XII (Intermediate)',
+      field: 'Science Stream (PCM)',
+      institution: 'ST. Mary’s School',
+      timeline: 'Mar 2023 – May 2024',
+      location: 'Kashipur, Uttarakhand',
+      score: 'Percentage: 82.2%',
+      description: 'Completed Higher Secondary Education focusing on Physics, Chemistry, and Mathematics.'
+    },
+    {
+      degree: 'Class X (Secondary School)',
+      institution: 'ST. Mary’s School',
+      timeline: 'Mar 2021 – May 2022',
+      location: 'Kashipur, Uttarakhand',
+      score: 'Percentage: 87.2%',
+      description: 'Completed Secondary School Certificate examination with strong academic foundation.'
+    }
+  ],
   github: 'https://github.com/Sparsh88',
-  linkedin: 'https://www.linkedin.com/in/sparsh88',
+  linkedin: 'https://www.linkedin.com/in/sparsh88/',
   leetcode: 'https://leetcode.com/u/aBfXZJ88ua/',
   email: 'sparshchauhan050@gmail.com',
   phone: '+91 7088951914',

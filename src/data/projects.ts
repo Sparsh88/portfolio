@@ -4,34 +4,33 @@ export const projectsData: Project[] = [
   {
     id: 'smartshop',
     title: 'SmartShop',
-    category: 'Full-Stack E-Commerce Platform',
-    shortDescription: 'Modern e-commerce platform with faceted search, debounced filtering, Zustand cart management, Razorpay payment processing, and admin inventory analytics.',
-    fullDescription: 'SmartShop is a high-performance full-stack e-commerce application built with React, TypeScript, Node.js, Express, and PostgreSQL with Prisma ORM. Features include an interactive audio store showcase, atomic inventory stock validation, Cloudinary media CDN, secure Razorpay checkout, and an admin dashboard powered by Recharts.',
+    category: 'Full-Stack AI-Powered E-Commerce Platform',
+    shortDescription: 'Full-stack e-commerce platform integrating 8+ core features, Razorpay checkout with HMAC-SHA256 signature verification, atomic inventory updates, and Gemini AI recommendation engine.',
+    fullDescription: 'SmartShop is an AI-powered full-stack e-commerce application built with React, TypeScript, Node.js, Express, and PostgreSQL with Prisma ORM. Features 8+ core capabilities including role-based authentication, product search and faceted filtering, persistent cart and wishlist, coupons, order tracking, atomic inventory updates, HMAC-SHA256 Razorpay checkout, and an admin analytics dashboard.',
     imageUrl: '/projects/smartshop.png',
-    technologies: ['React 19', 'TypeScript', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma ORM', 'Razorpay', 'Cloudinary', 'Tailwind CSS', 'Zustand'],
+    technologies: ['React 19', 'TypeScript', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma ORM', 'Razorpay', 'Google Gemini API', 'Tailwind CSS', 'Zustand'],
     githubUrl: 'https://github.com/Sparsh88/SmartShop',
     liveUrl: 'https://smart-shop-ten-nu.vercel.app',
     featured: true,
     type: 'fullstack',
     highlights: [
-      'Faceted product catalog filtering with instant debounced search',
-      'Secure Razorpay payment gateway integration with server webhook verification',
-      'Role-based access control (RBAC) with secure JWT cookie authentication',
-      'Comprehensive admin portal with revenue charts and stock management'
+      'Integrated 8+ core features: role-based authentication, search/filtering, persistent cart & wishlist, coupons, order tracking, & admin analytics',
+      'Implemented secure Razorpay payment gateway integration with HMAC-SHA256 signature verification, JWT auth, and atomic inventory stock consistency',
+      'Built a hybrid AI product recommendation engine using Google Gemini API and PostgreSQL-based ranking with deterministic fallback'
     ],
     architecture: {
       frontend: 'React 19, TypeScript, Tailwind CSS, Zustand state store, Lucide Icons',
       backend: 'Node.js, Express REST API, Prisma Client, JWT, Multer',
       database: 'PostgreSQL relational database with foreign key integrity & indices',
-      aiOrSpecial: 'Razorpay Payment Gateway API, Cloudinary Image CDN'
+      aiOrSpecial: 'Google Gemini API recommendation engine, Razorpay HMAC verification'
     }
   },
   {
     id: 'skillforge-ai',
     title: 'SkillForge AI',
-    category: 'AI-Powered Career & Study SaaS',
-    shortDescription: 'All-in-one AI career prep & study platform featuring ATS resume analysis, voice mock interviews with real-time speech assessment, and document Q&A.',
-    fullDescription: 'SkillForge AI is an advanced SaaS application integrating Google Gemini 1.5 Flash to help students and developers prepare for technical careers. Features include real-time ATS resume scoring, audio voice mock interviews with WPM & tone analysis, AI document chat (PDF/DOCX/TXT), Kanban task tracking, and Razorpay credit-metered monetization.',
+    category: 'AI-Powered Career & Productivity Platform',
+    shortDescription: 'Full-stack AI career & productivity platform with 6+ AI tools, document intelligence for PDF/DOCX/TXT via Gemini 1.5 Flash, Prisma ORM, Kanban & calendar workflows.',
+    fullDescription: 'SkillForge AI is a comprehensive career and productivity SaaS platform integrating 6+ AI-powered tools including ATS resume analysis, career roadmaps, study planning, mock interviews, code assistance, and content generation. Features AI document intelligence supporting PDF, DOCX, and TXT with contextual Q&A using Google Gemini 1.5 Flash, PostgreSQL with Prisma ORM, Kanban/calendar task management, deployed on Vercel and Render.',
     imageUrl: '/projects/skillforge-ai.png',
     technologies: ['React 19', 'TypeScript', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma ORM', 'Gemini 1.5 Flash', 'Web Speech API', 'Razorpay', 'Tailwind CSS'],
     githubUrl: 'https://github.com/Sparsh88/Ai-Saas',
@@ -39,16 +38,15 @@ export const projectsData: Project[] = [
     featured: true,
     type: 'ai-saas',
     highlights: [
-      'ATS resume parser extracting skills and calculating job role compatibility score',
-      'Interactive voice mock interview simulator with real-time speech-to-text',
-      'AI Document Hub parsing PDF/DOCX/TXT for context-aware question answering',
-      'Credit-metered usage plans backed by Razorpay subscription workflows'
+      'Integrated 6+ AI tools: ATS resume scoring, career roadmaps, study planner, interactive mock interviews, code assistance, & content generation',
+      'Implemented AI-powered document intelligence supporting PDF, DOCX, and TXT formats with contextual Q&A via Google Gemini 1.5 Flash',
+      'Built secure JWT auth, PostgreSQL data management with Prisma ORM, and project/task management with Kanban & calendar views; deployed on Vercel & Render'
     ],
     architecture: {
       frontend: 'React 19, TypeScript, Tailwind CSS, Web Speech API (SpeechRecognition & Synthesis)',
       backend: 'Node.js, Express RESTful architecture, Prisma ORM, Multer file parser',
-      database: 'PostgreSQL with relational schema for credits, interviews, and documents',
-      aiOrSpecial: 'Google Gemini 1.5 Flash Generative AI API, PDFKit document parsing'
+      database: 'PostgreSQL relational database hosted on Render / Supabase',
+      aiOrSpecial: 'Google Gemini 1.5 Flash Generative AI, PDF/DOCX/TXT document intelligence'
     }
   },
   {

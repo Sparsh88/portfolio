@@ -4,17 +4,6 @@ import { motion } from 'framer-motion';
 import profileImg from '../assets/profile.jpg';
 
 export const Hero: React.FC = () => {
-  const handleResumeClick = () => {
-    const resumePath = '/resume.pdf';
-    fetch(resumePath, { method: 'HEAD' })
-      .then(res => {
-        if (!res.ok) {
-          alert('Resume will be available for download shortly. You can also connect via LinkedIn or email.');
-        }
-      })
-      .catch(() => {});
-  };
-
   return (
     <section id="home" className="pt-32 sm:pt-36 pb-20 sm:pb-28 bg-[#F3F4F6] dark:bg-[#000000] overflow-hidden scroll-mt-16 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,7 +85,6 @@ export const Hero: React.FC = () => {
                 href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={handleResumeClick}
                 className="inline-flex items-center space-x-2 px-5 py-3.5 text-sm font-semibold text-neutral-900 dark:text-white bg-white dark:bg-[#0D0D0D] hover:bg-neutral-100 dark:hover:bg-neutral-800 border-2 border-neutral-300 dark:border-neutral-800 rounded-full transition-all duration-200 shadow-xs hover:-translate-y-0.5 active:scale-95"
               >
                 <FileText className="w-4 h-4 text-neutral-700 dark:text-neutral-300" />

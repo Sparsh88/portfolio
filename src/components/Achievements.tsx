@@ -1,6 +1,6 @@
 import React from 'react';
-import { Code2, GraduationCap, Award, ArrowUpRight } from 'lucide-react';
-import { GithubIcon } from './SocialIcons';
+import { Code2, GraduationCap, ArrowUpRight } from 'lucide-react';
+import { GithubIcon, LeetCodeIcon } from './SocialIcons';
 import { profileData } from '../data/profile';
 import { motion } from 'framer-motion';
 
@@ -12,7 +12,7 @@ export const Achievements: React.FC = () => {
       border: 'border-2 border-sky-300 dark:border-sky-900/80 hover:border-sky-500 dark:hover:border-sky-400',
       badge: 'bg-sky-50 dark:bg-sky-950 text-sky-700 dark:text-sky-300 border-sky-200 dark:border-sky-800',
       shadowHover: 'hover:shadow-[0_20px_35px_-10px_rgba(14,165,233,0.25)]',
-      value: '7 Live',
+      value: '9 Live',
       label: 'Projects Built',
       description: 'Production-ready web applications deployed live on Vercel with clean code architecture.',
       link: '#projects'
@@ -29,15 +29,16 @@ export const Achievements: React.FC = () => {
       link: '#about'
     },
     {
-      icon: <Award className="w-6 h-6 text-amber-600 dark:text-amber-400" />,
+      icon: <LeetCodeIcon className="w-6 h-6 text-amber-600 dark:text-amber-400" />,
       iconBg: 'bg-amber-100 dark:bg-amber-950/60 border border-amber-200 dark:border-amber-800 shadow-amber-100',
       border: 'border-2 border-amber-300 dark:border-amber-900/80 hover:border-amber-500 dark:hover:border-amber-400',
       badge: 'bg-amber-50 dark:bg-amber-950 text-amber-800 dark:text-amber-300 border-amber-200 dark:border-amber-800',
       shadowHover: 'hover:shadow-[0_20px_35px_-10px_rgba(245,158,11,0.25)]',
-      value: '5 Verifiable',
-      label: 'Certificates Earned',
-      description: 'Verified credentials from Infosys Springboard, Coding Tantra, WNS, and Accenture.',
-      link: '#certificates'
+      value: '100+ Solved',
+      label: 'LeetCode Problems',
+      description: 'Solved 100+ Data Structures & Algorithms problems across arrays, trees, graphs, and dynamic programming.',
+      link: profileData.leetcode,
+      isExternal: true
     },
     {
       icon: <GithubIcon className="w-6 h-6 text-purple-600 dark:text-purple-400" />,
