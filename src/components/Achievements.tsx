@@ -15,7 +15,8 @@ export const Achievements: React.FC = () => {
       value: '9 Live',
       label: 'Projects Built',
       description: 'Production-ready web applications deployed live on Vercel with clean code architecture.',
-      link: '#projects'
+      link: profileData.vercel || 'https://vercel.com/sparsh88s-projects',
+      isExternal: true
     },
     {
       icon: <GraduationCap className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />,

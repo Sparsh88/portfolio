@@ -91,6 +91,7 @@ export interface ProfileInfo {
   github: string;
   linkedin: string;
   leetcode?: string;
+  vercel?: string;
   email: string;
   phone?: string;
   whatsapp?: string;

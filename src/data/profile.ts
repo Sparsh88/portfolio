@@ -46,6 +46,7 @@ export const profileData: ProfileInfo = {
   github: 'https://github.com/Sparsh88',
   linkedin: 'https://www.linkedin.com/in/sparsh88/',
   leetcode: 'https://leetcode.com/u/aBfXZJ88ua/',
+  vercel: 'https://vercel.com/sparsh88s-projects',
   email: 'sparshchauhan050@gmail.com',
   phone: '+91 7088951914',
   whatsapp: 'https://wa.me/917088951914',
