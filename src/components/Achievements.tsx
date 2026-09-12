@@ -70,7 +70,7 @@ export const Achievements: React.FC = () => {
       border: 'border-2 border-purple-300 dark:border-purple-900/80 hover:border-purple-500 dark:hover:border-purple-400',
       badge: 'bg-purple-50 dark:bg-purple-950 text-purple-800 dark:text-purple-300 border-purple-200 dark:border-purple-800',
       shadowHover: 'hover:shadow-[0_20px_35px_-10px_rgba(168,85,247,0.25)]',
-      value: '400+ Contributions',
+      value: '500+ Contributions',
       label: 'GitHub Profile',
       description: 'Active open source contributions, repositories, and full-stack web application builds.',
       link: profileData.github,
